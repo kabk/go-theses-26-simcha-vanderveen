@@ -52,7 +52,7 @@ html {
   padding: 1rem;
   box-sizing: border-box;
   
-  background-color: rgb(248, 228, 198); /*var(--color-accent);*/
+  background-color: rgb(0, 0, 0); /*var(--color-accent);*/
   color: var(--color-background);
 } 
 
