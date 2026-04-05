@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const sections = document.querySelectorAll("h2[id], #note-1,#note-2,#note-3,#note-4");
+//const sections = document.querySelectorAll("h2[id], #note-0,#note-1,#note-2,#note-3,#note-4");
+  const sections = document.querySelectorAll("h2[id], .note");
   const navLinks = document.querySelectorAll(".list .navigation");
 
   function highlightCurrentSection() {
@@ -31,9 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Call the function once on page load
   highlightCurrentSection();
-});
 
-document.addEventListener("DOMContentLoaded", function () {
   const stickyNav = document.querySelector(".sticky-nav");
   const header = document.querySelector(".header");
   const main = document.querySelector("main");
@@ -59,8 +57,23 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Reset lastScrollTop at the top of the page
-  });
 });
+
+function addScrollpadding( ) {
+
+  const bibliographyHeader = document.getElementById( 'bibliography' );
+  const emailContainer = document.getElementById( 'email-container' );
+
+  const spaceBetween = ( emailContainer.offsetTop + emailContainer.offsetHeight )
+                     - bibliographyHeader.offsetTop;
+
+  emailContainer.parentNode.style.paddingBottom = `${ window.innerHeight - spaceBetween }px`;
+}
+
+//
+window.addEventListener("resize", addScrollpadding );
+addScrollpadding( );
+//
 
 window.addEventListener("load", function () {
   document.getElementById("header").scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the header
