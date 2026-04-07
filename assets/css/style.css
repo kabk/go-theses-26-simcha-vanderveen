@@ -29,35 +29,6 @@
   font-style: normal;
   font-display: block;
 } 
-
-/*  
-@font-face {
-  font-family: "acumin-pro-condensed", sans-serif;
-  src: url('https://use.typekit.net/acr0pub.css');
-  font-weight: 400;
-  font-style: normal;
-}
-  @font-face {
-  font-family: "acumin-pro-extra-condensed", sans-serif;
-  src: url('https://use.typekit.net/acr0pub.css');
-  font-weight: 400;
-  font-style: normal;
-  }
-  
-@font-face {
-  font-family: "ibm-plex-serif", sans-serif;
-  src: url('https://use.typekit.net/acr0pub.css');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  src: url('https://use.typekit.net/acr0pub.css');
-  font-family: "ibm-plex-serif", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
  
 /* VARIABLES */
   
@@ -239,7 +210,7 @@ p {
   line-height: 135%;
   font-family: "inter", sans-serif;
   text-align: justify;
-  hyphens: auto;
+  hyphens: none;
   margin-bottom: 4rem;
   hyphenate-limit-chars: 6 3 3;
 }
@@ -330,7 +301,7 @@ p.notes {
   font-size: max(0,7rem, 1.7vw);
   text-align: center;
   font-family: "inter", sans-serif;
-  font-style: normal;
+  font-style: italic;
 
   color: #ffffff;
   background-color: rgb(0, 0, 0);  /* 👈 this is the fill */
@@ -365,7 +336,7 @@ a {
   font-family: "inter", sans-serif;
   color: var(--color-text); 
   text-decoration: none; 
-  font-size: max(1rem, 1.2vw); 
+  font-size: 16px; 
   transition: color 0.3s ease; 
 }
 
@@ -496,8 +467,8 @@ a {
   font-family: "inter", sans-serif;
   display: none;
   float:right; 
-  width:50%;
-  margin-right: -50%;
+  width:40%;
+  margin-right: -47%;
   padding:1rem;
   box-sizing: border-box;
   font-size: max(0.3rem, 0.8vw);
@@ -513,8 +484,7 @@ a {
   display: inline-block; 
   align-items: center; 
   text-align: center; 
-  background-color: rgb(31, 95, 151);
-  box-shadow: inset 0 0em 0.3em var(--color-accent);
+  background-color: rgb(255, 255, 255);
   margin-top: max(-1.2rem, -0.3vw);
   margin-bottom: max(-1.2rem, -0.3vw);
 }
