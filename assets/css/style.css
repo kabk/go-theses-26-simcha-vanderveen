@@ -504,9 +504,9 @@ a {
 .sidenote-right, .sidenote-right *{
   word-wrap: break-word;
   overflow-wrap: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none;
 }
 
 #abstract-title {
@@ -517,9 +517,9 @@ a {
   text-align: left;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none;
 }
 
 
@@ -580,10 +580,10 @@ p {
   margin-right: 1.5rem;
   margin-bottom: 2rem;
   text-align: justify; 
-  hyphens: auto; 
-  -webkit-hyphens: auto; 
-  -moz-hyphens: auto; 
-  -ms-hyphens: auto; 
+  hyphens: none; 
+  -webkit-hyphens: none; 
+  -moz-hyphens: none; 
+  -ms-hyphens: none; 
   hyphenate-limit-chars: 6 3 3;
 }
 
